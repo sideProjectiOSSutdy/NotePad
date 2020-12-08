@@ -10,9 +10,11 @@ import UIKit
 class NoteListViewController: UIViewController {
     
     private var contentsView: UIView!
+    private var floatingButton: UIButton!
     
-    init(contentsView: UIView) {
+    init(contentsView: UIView, floatingButton: UIButton) {
         self.contentsView = contentsView
+        self.floatingButton = floatingButton
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -30,6 +32,7 @@ class NoteListViewController: UIViewController {
 extension NoteListViewController {
     private func setupUI() {
         setupContentsView()
+        setupFloatingButton()
     }
     
     private func setupContentsView() {
@@ -45,6 +48,26 @@ extension NoteListViewController {
         if let noteListContentsView = contentsView as? NoteListContentsView {
             noteListContentsView.setupTableView(self, self)
         }
+    }
+    
+    private func setupFloatingButton() {
+        view.addSubview(floatingButton)
+        floatingButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        [floatingButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+         floatingButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+         floatingButton.widthAnchor.constraint(equalToConstant: 40),
+         floatingButton.heightAnchor.constraint(equalToConstant: 40)]
+            .forEach { $0.isActive = true }
+        
+        floatingButton.layer.cornerRadius = 20
+        floatingButton.clipsToBounds = true
+        
+        floatingButton.addTarget(self, action: #selector(didTapFloatingButton(_:)), for: .touchUpInside)
+    }
+    
+    @objc private func didTapFloatingButton(_ sender: UIButton) {
+        // 메모 작성하는 곳으로 이동
     }
 }
 

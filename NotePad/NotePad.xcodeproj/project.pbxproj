@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C45BB15257BAE870060F809 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45BB14257BAE870060F809 /* Note.swift */; };
+		3C5D5426257F784B007C78CB /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D5425257F784B007C78CB /* FloatingButton.swift */; };
 		3C5E3AB42578EBE500E92CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E3AB32578EBE500E92CAE /* AppDelegate.swift */; };
 		3C5E3AB82578EBE500E92CAE /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E3AB72578EBE500E92CAE /* NoteListViewController.swift */; };
 		3C5E3ABB2578EBE500E92CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E3AB92578EBE500E92CAE /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		3C45BB14257BAE870060F809 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		3C5D5425257F784B007C78CB /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		3C5E3AB02578EBE500E92CAE /* NotePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5E3AB32578EBE500E92CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C5E3AB72578EBE500E92CAE /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				3C5E3AB72578EBE500E92CAE /* NoteListViewController.swift */,
 				3CD27BF1257CD09A003FAA53 /* NoteListContentsView.swift */,
 				3CD27BFD257CD9AB003FAA53 /* NoteListCell.swift */,
+				3C5D5425257F784B007C78CB /* FloatingButton.swift */,
 				3C5E3AB92578EBE500E92CAE /* Main.storyboard */,
 				3C5E3ABC2578EBE500E92CAE /* Assets.xcassets */,
 				3C5E3ABE2578EBE500E92CAE /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 				3CD27BFE257CD9AB003FAA53 /* NoteListCell.swift in Sources */,
 				3C5E3AB42578EBE500E92CAE /* AppDelegate.swift in Sources */,
 				3C45BB15257BAE870060F809 /* Note.swift in Sources */,
+				3C5D5426257F784B007C78CB /* FloatingButton.swift in Sources */,
 				3CD27BF2257CD09A003FAA53 /* NoteListContentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
